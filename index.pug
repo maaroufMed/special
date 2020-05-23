@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title website pure javascript
+        link(rel="stylesheet", href="css/normalize.css")
+        link(rel="stylesheet", href="css/main.css")
+        link(rel="stylesheet", href="css/all.min.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap")
+    body
+        //- star setting box
+        .setting-box
+            .container-box
+                .box-content
+                    h3 setting option
+                    .box-option
+                        h4 color :
+                        .list-item
+                            i(class="fas fa-check-circle item", data-color="#ff9510")
+                            i(class="fas fa-circle item", data-color="#ff523b")
+                            i(class="fas fa-circle item", data-color="#217dd3")
+                            i(class="fas fa-circle item", data-color="#0bd64f")
+                            i(class="fas fa-circle item", data-color="#12fff4")
+                    .box-option
+                        h4 random background
+                        .random-bg
+                            span(class='yes active', data-bg="yes") yes
+                            span(class='no', data-bg='no') no
+                    .box-option
+                        h4 show bullets
+                        .random-bullets
+                            span(class='yes active', data-show="yes") yes
+                            span(class="no", data-show='no') no
+                    .box-option
+                        h4 reset
+                        button.reset-option reset option
+        //- end setting box
+
+        //- star nav bullets 
+        .nav-bullets
+            .bullets(data-class=".about-us")
+                .tooltip About Us
+            .bullets(data-class=".our-skills")
+                .tooltip Skills
+            .bullets(data-class=".gallery")
+                .tooltip Gallery
+            .bullets(data-class=".timeline")
+                .tooltip Timeline
+            .bullets(data-class=".features")
+                .tooltip features
+            .bullets(data-class=".testimonials")
+                .tooltip testimonial
+                
+        //- end nav bullets 
+
+        //- star btn top
+        .btn-top
+            i(class="fas fa-level-up-alt")
+        //- end btn top 
+
+
+
+
+        //- star landing page
+        header(class= 'landing-page text-capitalize')
+            //- the overlay 
+            .overlay
+            //- star navbar
+            nav.navbar
+                //- the container
+                .container
+                    .logo
+                        a(href="#") special design
+                    .toggle-navigation
+                        button.toggle-menu
+                            span
+                            span
+                            span
+                        ul.navigation
+                            li
+                                a(href="#") home
+                            li
+                                a(href="#", data-class=".about-us", class="link") about
+                            li
+                                a(href="#", data-class=".our-skills", class="link") skills
+                            li
+                                a(href="#", data-class=".gallery", class="link") gallery
+                            li
+                                a(href="#", data-class=".timeline", class="link") timeline
+                            li
+                                a(href="#", data-class=".features", class="link") features
+                            li
+                                a(href="#", data-class=".testimonials", class="link") testimonial
+
+                    //- icon search
+                    i(class='fas fa-search search')
+                    //- box setting 
+                    i(class="fas fa-bars setting")
+                    .clearfix
+            //- end navbar
+
+            //- star intro
+            .intro
+                h1  we are 
+                    span creative 
+                    | agency
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sint explicabo voluptate iusto repellat doloremque esse aperiam molestias iste
+            //- end intro
+
+
+            .box-search(id="box-search")
+                .top-box
+                    input(type="text" placeholder="search here")
+                    i(class="fas fa-arrow-right closs")
+
+        //- end landing page 
+
+
+        //- star about us 
+        section(class='about-us')
+            .container
+                .info-box
+                    h2 about us
+                    p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptas aliquam laudantium obcaecati officia, iusto reprehenderit! Saepe quod, optio nesciunt iste modi perspiciatis ipsa debitis ipsam similique neque recusandae odio?
+                .image-box
+                    img(src='images/04.png', alt='the image about us')
+        //- end about us 
+
+        //- star our skills
+        section.our-skills
+            .container
+                h2 our skills
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptatibus hic qui id animi cupiditate incidunt deleniti? Quod, dolor mollitia dolorem culpa, debitis illo ea, saepe nulla eligendi nemo itaque.
+
+                .progress-container
+                    .card
+                        .box
+                            .percent
+                                svg
+                                    circle(cx="70", cy="70", r="70")
+                                    circle(cx="70", cy="70", r="70")
+                                .number
+                                    h4 70
+                                        span %
+                                h4.text html
+
+                    .card
+                        .box
+                            .percent
+                                svg
+                                    circle(cx="70", cy="70", r="70")
+                                    circle(cx="70", cy="70", r="70")
+                                .number
+                                    h4 80
+                                        span %
+                                h4.text css
+
+                    .card
+                        .box
+                            .percent
+                                svg
+                                    circle(cx="70", cy="70", r="70")
+                                    circle(cx="70", cy="70", r="70")
+                                .number
+                                    h4 60
+                                        span %
+                                h4.text javascript
+
+                    .card
+                        .box
+                            .percent
+                                svg
+                                    circle(cx="70", cy="70", r="70")
+                                    circle(cx="70", cy="70", r="70")
+                                .number
+                                    h4 90
+                                        span %
+                                h4.text vue
+                        
+                
+        //- end our skills 
+
+        //- star gallery 
+        section.gallery
+            .container
+                h2 our gallery
+                p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non unde quas 
+                .images-box
+                    img(src="images/gallery/1.jpg", alt="image 1 of gallery")
+                    img(src="images/gallery/2.jpg", alt="image 2 of gallery")
+                    img(src="images/gallery/3.jpg", alt="image 3 of gallery")
+                    img(src="images/gallery/4.jpg", alt="image 4 of gallery")
+                    img(src="images/gallery/5.jpg", alt="image 5 of gallery")
+                    img(src="images/gallery/6.jpg", alt="image 6 of gallery")
+                    img(src="images/gallery/7.jpg", alt="image 7 of gallery")
+                    img(src="images/gallery/8.jpg", alt="image 8 of gallery")
+                    img(src="images/gallery/9.jpg", alt="image 9 of gallery")
+                    img(src="images/gallery/10.jpg", alt="image 10 of gallery")
+                .clearfix
+            .popup-overlay
+                .inner-box
+                    i(class='fas fa-times closs')
+                    img(src="", alt="" id="main-img")
+                    i(class="fas fa-arrow-left left")
+                    i(class="fas fa-arrow-right right")
+                    h3.title
+        //- end gallery 
+
+        //- star timeline
+        section.timeline
+            .container
+                h2 timeline
+                p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non unde quas 
+                .timeline-content
+                    .year 2020
+                    .left-content
+                        h3 the heading 
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum consectetur tempora iure,
+                    .clearfix
+                    .year 2019
+                    .right-content
+                        h3 the heading 
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum consectetur tempora iure,
+                    .clearfix
+                    .year 2018
+                    .left-content
+                        h3 the heading 
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum consectetur tempora iure,
+                    .clearfix
+                    .year 2017
+                    .right-content
+                        h3 the heading 
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum consectetur tempora iure,
+        //- ebd timeline
+
+        //-star features
+        section.features
+            .container
+                h2 our features
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                .feat-box
+                    img(src="images/feat/01.jpg", all="the feat image")
+                    h4 web design
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit
+                .feat-box
+                    img(src="images/feat/01.jpg", all="the feat image")
+                    h4 UI/UX design
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit
+                .feat-box
+                    img(src="images/feat/01.jpg", all="the feat image")
+                    h4 web developer
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit
+                .feat-box
+                    img(src="images/feat/01.jpg", all="the feat image")
+                    h4 seo
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit
+                .feat-box
+                    img(src="images/feat/01.jpg", all="the feat image")
+                    h4 photoshop
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit
+                .feat-box
+                    img(src="images/feat/01.jpg", all="the feat image")
+                    h4 front end 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit
+        //-end features
+
+        //- star testimonials
+        section.testimonials
+            .container
+                h2 testimonials
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                .content
+                    .testimonial-box
+                        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut impedit necessitatibus accusamus officia in fugiat blanditiis libero alias nesciunt 
+                        .person
+                            img(src="images/testi/01.jpg", alt="image user", width="80px", height="80px")
+                            h4 osama mohamed
+                        <i class="fas fa-quote-left"></i>
+                    .testimonial-box
+                        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut impedit necessitatibus accusamus officia in fugiat blanditiis libero alias nesciunt
+                        .person
+                            img(src="images/testi/02.jpg", alt="image user",  width="80px", height="80px")
+                            h4 hasen ryad
+                        <i class="fas fa-quote-left"></i>
+                    .testimonial-box
+                        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut impedit necessitatibus accusamus officia in fugiat blanditiis libero alias nesciunt
+                        .person
+                            img(src="images/testi/03.jpg", alt="image user",  width="80px", height="80px")
+                            h4 zeyna ali
+                        <i class="fas fa-quote-left"></i>
+        //- end testimonials
+
+        //- star contact us 
+        section.contact-us
+            .overlay
+            .container
+                h2 contact us
+                form
+                    .left
+                        input(type="text" name="username" placeholder="Your Name")
+                        input(type="phone" name="phone" placeholder="Your Phone")
+                        input(type="email" name="email" placeholder="Your Email")
+                        input(type="password" name="password" placeholder="Your Password")
+                    .right
+                        textarea(name="message", placeholder="Your Message")
+                        input(type="submit" value="Send")
+        //- end contact us
+
+
+        //- star brand 
+        .brand
+            .container
+                .box-img
+                    img(src="images/brand/1.png", alt="img 1")
+                    img(src="images/brand/2.png", alt="img 2")
+                    img(src="images/brand/3.png", alt="img 3")
+                    img(src="images/brand/4.png", alt="img 4")
+        //- end brand
+
+        //- star footer 
+        footer
+            .container
+                p created with love 
+                    i(class="fas fa-heart")
+                    | by maarouf
+        //- end footer 
+
+
+        //- the jQuery file
+        script(src="js/jquery-3.4.1.min.js")
+
+        //- main file js
+        script(src="js/main.js")
